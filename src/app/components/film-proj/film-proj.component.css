@@ -1,0 +1,6 @@
+#carousel {
+  display: flex;
+}
+.picsum-img-wrapper {
+  background-size: 100% auto;
+}

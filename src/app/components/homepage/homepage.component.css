@@ -1,0 +1,12 @@
+#background {
+  background-color: cornflowerblue;
+  height: 100%;
+  width: 100%;
+}
+
+#content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
