@@ -6,3 +6,8 @@
   right: 0;
   background: #eee;
 }
+
+#sideButtons {
+  display: flex;
+  flex-direction: column;
+}
