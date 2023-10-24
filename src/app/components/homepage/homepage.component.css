@@ -4,9 +4,17 @@
   width: 100%;
 }
 
-#content {
-  height: 100vh;
+#logo {
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#socials {
+  display: flex;
   align-items: center;
 }
+
+
