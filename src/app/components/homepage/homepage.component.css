@@ -1,20 +1,77 @@
-#background {
-  background-color: cornflowerblue;
-  height: 100%;
-  width: 100%;
+/*#background {*/
+/*  background-color: cornflowerblue;*/
+/*  height: 100%;*/
+/*  width: 100%;*/
+/*}*/
+
+/*#content {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  height: 100vh;*/
+/*  flex-direction: column;*/
+/*}*/
+
+/*#socials {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
+
+/* my-component.component.css */
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("/assets/images/background1.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-#logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  flex-direction: column;
+#background {
+  text-align: center;
+}
+
+#content {
+  max-width: 600px; /* Adjust the maximum width according to your design */
+  padding: 20px;
+}
+
+#logo img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  height: auto;
+}
+
+#logo h2 {
+  color: white;
 }
 
 #socials {
-  display: flex;
-  align-items: center;
+  margin-top: 20px; /* Adjust the margin as needed */
 }
+
+#socials button {
+  margin: 0 5px; /* Adjust the margin between buttons as needed */
+}
+
+.linkedin {
+  background-color: #0077b5;
+  color: #fff;
+}
+
+.youtube {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.instagram {
+  background: linear-gradient(45deg, #405de6, #e1306c);
+  color: #fff;
+}
+
+.linkedin:hover, .youtube:hover, .instagram:hover {
+  filter: brightness(90%);
+}
+
 
 

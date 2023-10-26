@@ -1,1 +1,27 @@
+#fh5co-about {
+  background-color: #f8f8f8;
+  padding: 40px 0; /* Add padding for better separation */
+}
 
+.info {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info li {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+mat-card {
+  border: 1px solid #ddd; /* Add a subtle border to the card */
+  border-radius: 8px;
+  overflow: hidden; /* Hide the border radius overflow */
+}
+
+mat-card-content {
+  padding: 20px;
+}

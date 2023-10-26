@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./film-proj.component.css']
 })
 export class FilmProjComponent {
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  images = ['https://i.ytimg.com/vi/OIDdViahe74/maxresdefault.jpg', 'https://i.ytimg.com/vi/EuQ9VPGAtNw/maxresdefault.jpg', 'https://i.ytimg.com/vi/tQhsPhTkWhc/maxresdefault.jpg'];
 }

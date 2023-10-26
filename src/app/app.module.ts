@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
-import {RouterLink, ɵEmptyOutletComponent} from "@angular/router";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NgbCarousel, NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {MatSidenavModule} from "@angular/material/sidenav";
@@ -21,6 +20,8 @@ import {MatCardModule} from "@angular/material/card";
 import {CommonModule} from '@angular/common';
 import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
+import {MatListModule} from "@angular/material/list";
+import {ScrollingModule} from "@angular/cdk/scrolling";
 
 @NgModule({
   declarations: [
@@ -35,9 +36,8 @@ import {MatSelectModule} from "@angular/material/select";
   ],
   imports: [
     BrowserModule,
-    ɵEmptyOutletComponent,
     BrowserAnimationsModule,
-    RouterLink,
+    CommonModule,
     NgbModule,
     MatSidenavModule,
     MatSlideToggleModule,
@@ -45,10 +45,11 @@ import {MatSelectModule} from "@angular/material/select";
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    CommonModule,
     NgbCarousel,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatListModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

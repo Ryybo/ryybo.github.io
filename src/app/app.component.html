@@ -1,50 +1,54 @@
-<mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" opened><h2>Ryan Wakamoto</h2>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" [opened]="!isSmallScreen || isSidenavOpen">
+    <h2>Ryan Wakamoto</h2>
     <div id="sideButtons">
       <br>
-      <button mat-stroked-button>
+      <button mat-stroked-button (click)="scrollTo('home')">
         <mat-icon>home</mat-icon>
         Home
       </button>
       <br>
-      <button mat-stroked-button>
+      <button mat-stroked-button (click)="scrollTo('about')">
         <mat-icon>person</mat-icon>
         About
       </button>
       <br>
-      <button mat-stroked-button>
+      <button mat-stroked-button (click)="scrollTo('dProj')">
         <mat-icon>computer</mat-icon>
         Development Projects
       </button>
       <br>
-      <button mat-stroked-button>
+      <button mat-stroked-button (click)="scrollTo('fProj')">
         <mat-icon>camera</mat-icon>
         Film Projects
       </button>
       <br>
-      <button mat-stroked-button>
+      <button mat-stroked-button (click)="scrollTo('photo')">
         <mat-icon>camera_alt</mat-icon>
         Photography
       </button>
       <br>
-      <button mat-stroked-button>
+      <button mat-stroked-button (click)="scrollTo('contact')">
         <mat-icon>connect_without_contact</mat-icon>
         Contact
       </button>
     </div>
-
-
   </mat-sidenav>
-  <mat-sidenav-content>
-      <app-homepage></app-homepage>
-      <app-about></app-about>
-    <header>Development Projects</header>
-      <app-devel-proj></app-devel-proj>
-    <header>Film Projects</header>
-      <app-film-proj></app-film-proj>
-    <header>Photography</header>
-      <app-photography></app-photography>
-    <header>Contact</header>
-      <app-contact></app-contact>
-  </mat-sidenav-content>
+=
+
+    <mat-sidenav-content class="scrollable-content">
+      <div class="fixed-button" [style.left.px]="buttonPosition" *ngIf="isSmallScreen">
+        <button mat-mini-fab class="custom-fab" (click)="toggleSidenav()">
+          <mat-icon>{{ !isSidenavOpen ? 'menu' : 'close' }}</mat-icon>
+        </button>
+      </div>
+        <app-homepage id="home"></app-homepage>
+        <app-about id="about"></app-about>
+  <!--    <header>Development Projects</header>-->
+  <!--      <app-devel-proj></app-devel-proj>-->
+        <app-film-proj id="fProj"></app-film-proj>
+        <app-photography id="photo"></app-photography>
+        <app-contact id="contact"></app-contact>
+    </mat-sidenav-content>
 </mat-sidenav-container>
+
