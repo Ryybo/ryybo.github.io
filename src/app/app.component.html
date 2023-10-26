@@ -1,34 +1,33 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav mode="side" [opened]="!isSmallScreen || isSidenavOpen">
-    <h2>Ryan Wakamoto</h2>
     <div id="sideButtons">
       <br>
-      <button mat-stroked-button (click)="scrollTo('home')">
+      <button mat-raised-button class="custom-raised-button" (click)="scrollTo('home')">
         <mat-icon>home</mat-icon>
         Home
       </button>
       <br>
-      <button mat-stroked-button (click)="scrollTo('about')">
+      <button mat-raised-button class="custom-raised-button" (click)="scrollTo('about')">
         <mat-icon>person</mat-icon>
         About
       </button>
+<!--      <br>-->
+<!--      <button mat-raised-button class="custom-raised-button" (click)="scrollTo('dProj')">-->
+<!--        <mat-icon>computer</mat-icon>-->
+<!--        Development Projects-->
+<!--      </button>-->
       <br>
-      <button mat-stroked-button (click)="scrollTo('dProj')">
-        <mat-icon>computer</mat-icon>
-        Development Projects
-      </button>
-      <br>
-      <button mat-stroked-button (click)="scrollTo('fProj')">
+      <button mat-raised-button class="custom-raised-button" (click)="scrollTo('fProj')">
         <mat-icon>camera</mat-icon>
         Film Projects
       </button>
       <br>
-      <button mat-stroked-button (click)="scrollTo('photo')">
+      <button mat-raised-button class="custom-raised-button" (click)="scrollTo('photo')">
         <mat-icon>camera_alt</mat-icon>
         Photography
       </button>
       <br>
-      <button mat-stroked-button (click)="scrollTo('contact')">
+      <button mat-raised-button class="custom-raised-button" (click)="scrollTo('contact')">
         <mat-icon>connect_without_contact</mat-icon>
         Contact
       </button>

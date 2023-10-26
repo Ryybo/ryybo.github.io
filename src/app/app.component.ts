@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     }
     // set position of button when open/close sidenav
     if (this.isSidenavOpen) {
-      this.buttonPosition = 220;
+      this.buttonPosition = 250;
     } else {
       this.buttonPosition = 10;
     }

@@ -22,6 +22,8 @@ import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
 import {MatListModule} from "@angular/material/list";
 import {ScrollingModule} from "@angular/cdk/scrolling";
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ import {ScrollingModule} from "@angular/cdk/scrolling";
     MatInputModule,
     MatSelectModule,
     MatListModule,
-    ScrollingModule
+    ScrollingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
