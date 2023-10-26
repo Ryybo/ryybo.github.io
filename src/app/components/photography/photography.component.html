@@ -1,1 +1,19 @@
+<div id="photography" class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2>My Photos</h2>
+    </div>
+    <div class="col-md-12 text-center">
+      <p>Embark on a visual journey through my lens, capturing the essence of landscapes, the energy of sporting venues, the vibrancy of cities, and the architectural marvels that shape our world. Explore the artistry of life through my eyes.</p>
+    </div>
+  </div>
+  <div class="photo-grid">
+    <div class="photo" *ngFor="let photo of photos">
+      <img [src]="photo.url" alt="photoURL">
+    </div>
+  </div>
+
+
+</div>
+
 

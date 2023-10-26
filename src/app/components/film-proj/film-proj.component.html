@@ -1,32 +1,55 @@
+<div id="film-projects" class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2>My Film Projects</h2>
+    </div>
+    <div class="col-md-12 text-center">
+      <p>Explore my creative journey through a collection of compelling film projects that were stories of discovery, love and introspection.</p>
+    </div>
+  </div>
+</div>
+
 <div id="carousel">
   <ngb-carousel>
     <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[0]" alt="Random first slide" />
-      </div>
+      <a href="https://www.youtube.com/watch?v=OIDdViahe74" target="_blank">
+        <div class="youtube-thumbnail">
+          <img [src]="images[0]" alt="Youtube Thumbnail 1" />
+        </div>
+      </a>
+
       <div class="carousel-caption">
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h3>Hindrance</h3>
+        <p>Immersed in virtual reality to sculpt an ideal existence, a high school daughter remains oblivious to the impending intertwining of her meticulously crafted digital utopia with the challenges of her real-world existence.</p>
       </div>
     </ng-template>
+
     <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[1]" alt="Random second slide" />
-      </div>
+      <a href="https://www.youtube.com/watch?v=EuQ9VPGAtNw" target="_blank">
+        <div class="youtube-thumbnail">
+          <img [src]="images[1]" alt="Youtube Thumbnail 2" />
+        </div>
+      </a>
+
       <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3>Tinder Date</h3>
+        <p>In a quest to slim down for love, a guy discovers that the key to his happiness wasn't in shedding pounds but in realizing his intrinsic worth.</p>
       </div>
     </ng-template>
+
     <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[2]" alt="Random third slide" />
-      </div>
+      <a href="https://www.youtube.com/watch?v=tQhsPhTkWhc" target="_blank">
+        <div class="youtube-thumbnail">
+          <img [src]="images[2]" alt="Youtube Thumbnail 3" />
+        </div>
+      </a>
+
       <div class="carousel-caption">
-        <h3>Third slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <h3>Mirror Image</h3>
+        <p>Haunted by a forgotten past, a man finds the shadows of his history returning to cast an unsettling presence in his present.</p>
       </div>
     </ng-template>
+
   </ngb-carousel>
 </div>
 

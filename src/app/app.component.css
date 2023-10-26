@@ -1,13 +1,55 @@
-.example-container {
+.sidenav-container {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #eee;
+  background: #f8f8f8;
 }
 
 #sideButtons {
   display: flex;
   flex-direction: column;
+  padding: 16px;
 }
+
+#sideButtons button {
+  margin-bottom: 8px;
+}
+
+.scrollable-content {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.fixed-button {
+  position: fixed;
+  transition: left 0.3s ease;
+  z-index: 1002;
+}
+
+/*.about {*/
+/*  background-color: #0dcaf0 !important;*/
+/*}*/
+
+.mat-sidenav-container .custom-raised-button {
+  background-color: #f39a5c;
+  color: black;
+}
+
+.custom-fab {
+  background-color: white;
+  color: black;
+}
+
+.mat-sidenav {
+  background-color: #1e4859;
+}
+
+.mat-sidenav-content {
+  overflow-y: auto;
+  height: 100%;
+  /*padding: 16px;*/
+}
+
+

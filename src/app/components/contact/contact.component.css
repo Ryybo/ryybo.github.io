@@ -1,0 +1,58 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 50px;
+  margin-right: 16px;
+}
+
+.logo {
+  max-width: 50%;
+  height: auto;
+}
+
+button {
+  background-color: #0dcaf0; /* Use your preferred color */
+  color: white;
+  margin-top: 15px;
+}
+
+mat-card {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name-fields {
+  display: flex;
+  width: 100%;
+  margin-bottom: 16px; /* Adjust as needed */
+}
+
+.name-fields mat-form-field {
+  flex: 1;
+  margin-right: 16px; /* Adjust as needed */
+}
+
+.email-field mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
